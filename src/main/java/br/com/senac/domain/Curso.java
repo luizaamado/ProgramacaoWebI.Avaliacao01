@@ -16,10 +16,12 @@ public class Curso implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
+	
 	@Column(name = "nomeCurso")
 	private String nome;
+	
 	@Column(name = "descricaoCurso")
-	private String descricao;	
+	private String descricao;
 	
 	public Integer getId() {
 		return id;
@@ -38,5 +40,5 @@ public class Curso implements Serializable {
 	}
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
-	}
+	}	
 }

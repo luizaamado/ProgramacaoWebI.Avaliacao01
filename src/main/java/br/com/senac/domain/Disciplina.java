@@ -14,12 +14,14 @@ public class Disciplina implements Serializable {
 	private static final long serialVersionUID = -31557373928389448L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
+	
 	@Column(name = "nomeDisciplina")
 	private String nome;
+	
 	@Column(name = "descricaoDisciplina")
-	private String descricao;	
+	private String descricao;
 	
 	public Integer getId() {
 		return id;
